@@ -86,7 +86,7 @@ Stay tuned!
 
 ## As a module to enhance the frequency domain modeling capability of transformers and LSTM
 <p align="center">
-<img src=".\pics\as_module.png" height = "280" alt="" align=center />
+<img src=".\pics\as_module.png" height = "450" alt="" align=center />
 </p>
 
 ## Comparison with Transformers and other mainstream forecasting models
@@ -179,6 +179,11 @@ The data directory structure is shown as follows.
     └── weather
         └── weather.csv
 ```
+
+
+
+
+
 
 <img src="https://render.githubusercontent.com/render/math?math=W\bmod{2^{L}}=0">
 
