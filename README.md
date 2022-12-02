@@ -84,6 +84,10 @@ Stay tuned!
 <img src=".\pics\FECAM.png" height = "350" alt="" align=center />
 </p>
 
+## As a module to enhance the frequency domain modeling capability of transformers and LSTM
+<p align="center">
+<img src=".\pics\as_module.png" height = "280" alt="" align=center />
+</p>
 
 ## Comparison with Transformers and other mainstream forecasting models
 ### Multivariate Forecasting:
@@ -96,8 +100,6 @@ FECAM outperforms all transformer-based methods by a large margin.
 <p align="center">
 <img src=".\pics\uni.png" height = "280" alt="" align=center />
 </p>
-
-
 
 ### Efficiency
 <p align="center">
@@ -177,11 +179,6 @@ The data directory structure is shown as follows.
     └── weather
         └── weather.csv
 ```
-
-
-
-
-
 
 <img src="https://render.githubusercontent.com/render/math?math=W\bmod{2^{L}}=0">
 
