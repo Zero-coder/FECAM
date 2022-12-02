@@ -16,7 +16,7 @@ If you find this repository useful for your research work, please consider citin
 
 title={FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting},
 
-author={Jiang, Maowei and Zeng, Pengyu and Kai, Wang and Chen, Wenbo and Liu, Huan and Liu, Haoran},
+author={Jiang, Maowei and Zeng, Pengyu and Wang, Kai and Chen, Wenbo and Liu, Huan and Liu, Haoran},
 
 journal=Arxiv, 2022},
 
@@ -161,50 +161,31 @@ The data directory structure is shown as follows.
 ```
 ./
 └── datasets/
-    ├── ETT-data
+    ├── electricity
+    │   └── electricity.csv
+    ├── ETT-small
     │   ├── ETTh1.csv
     │   ├── ETTh2.csv
-    │   └── ETTm1.csv
-    ├── financial
-    │   ├── electricity.txt
-    │   ├── exchange_rate.txt
-    │   ├── solar_AL.txt
-    │   └── traffic.txt
-    └── PEMS
-        ├── PEMS03.npz
-        ├── PEMS04.npz
-        ├── PEMS07.npz
-        └── PEMS08.npz
+    │   ├── ETTm1.csv
+    │   └── ETTm2.csv
+    ├── exchange_rate
+    │   └── exchange_rate.csv
+    ├── illness
+    │   └── national_illness.csv
+    ├── traffic
+    │   └── traffic.csv
+    └── weather
+        └── weather.csv
 ```
 
 
 
 
-##### ETT Parameter highlights
 
-| Parameter Name | Description                  | Parameter in paper | Default                    |
-| -------------- | ---------------------------- | ------------------ | -------------------------- |
-| root_path      | The root path of subdatasets | N/A                | './datasets/ETT-data/ETT/' |
-| data           | Subdataset                   | N/A                | ETTh1                      |
-| pred_len       | Horizon                      | Horizon            | 48                         |
-| seq_len        | Look-back window             | Look-back window   | 96                         |
-| batch_size     | Batch size                   | batch size         | 32                         |
-| lr             | Learning rate                | learning rate      | 0.0001                     |
-| hidden-size    | hidden expansion             | h                  | 1                          |
-| levels         | SCINet block levels          | L                  | 3                          |
-| stacks         | The number of SCINet blocks  | K                  | 1                          |
-
-## Special Constraint
-
-- Because of the stacked binary down-sampling method that SCINet adopts, the number of levels &#40;L&#41; and look-back window &#40;W&#41; size should satisfy:)
 
 <img src="https://render.githubusercontent.com/render/math?math=W\bmod{2^{L}}=0">
 
 &#40;The formula might not be shown in the darkmode Github&#41;
-
-## References
-
-[1] [Reversible Instance Normalization for Accurate Time-Series Forecasting against Distribution Shift]&#40;https://openreview.net/forum?id=cGDAkQo1C0p&#41;
 
 ## Contact
 
