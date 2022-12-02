@@ -74,6 +74,17 @@ Stay tuned!
     bash ./scripts/Weather_script/FECAM.sh
     bash ./scripts/ILI_script/FECAM.sh
 ```
+## SENET(channel attention)
+<p align="center">
+<img src=".\pics\SENET.png" height = "250" alt="" align=center />
+</p>
+
+## FECAM(Frequency Enhanced Channel Attention Mechanism)
+<p align="center">
+<img src=".\pics\FECAM.png" height = "350" alt="" align=center />
+</p>
+
+
 ## Comparison with Transformers and other mainstream forecasting models
 ### Multivariate Forecasting:
 <p align="center">
