@@ -12,7 +12,7 @@ If you find this repository useful for your research work, please consider citin
 
 ```
 
-@article{liu2022SCINet,
+@article{2022FECAM,
 
 title={FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting},
 
