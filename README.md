@@ -127,7 +127,7 @@ Compared to vanilla models, only a few parameters are increased by applying our 
 ## Used Datasets
 
 
-We conduct the experiments on **11** popular time-series datasets, namely **Electricity Transformer Temperature (ETTh1, ETTh2 and ETTm1) ,  PeMS (PEMS03, PEMS04, PEMS07 and PEMS08) and Traffic, Solar-Energy, Electricity and Exchange Rate**, ranging from **power, energy, finance and traffic domains**. 
+We conduct the experiments on **6** popular time-series datasets, namely **Electricity Transformer Temperature (ETTh1, ETTh2 and ETTm1) and Traffic, Weather,Illness, Electricity and Exchange Rate**, ranging from **power, energy, finance , health care and traffic domains**. 
 
 
 ### Overall information of the 9 real world datasets
@@ -150,15 +150,7 @@ We conduct the experiments on **11** popular time-series datasets, namely **Elec
 
 
 ### Dataset preparation
-
-All datasets can be downloaded [here](https://drive.google.com/drive/folders/1Gv1MXjLo5bLGep4bsqDyaNMI2oQC9GH2?usp=sharing). To prepare all dataset at one time, you can just run:
-```
-source prepare_data.sh
-```
- [![ett](https://img.shields.io/badge/Download-ETT_Dataset-%234285F4?logo=GoogleDrive&labelColor=lightgrey)](https://drive.google.com/drive/folders/1NU85EuopJNkptFroPtQVXMZE70zaBznZ)
-[![pems](https://img.shields.io/badge/Download-PeMS_Dataset-%234285F4?logo=GoogleDrive&labelColor=lightgrey)](https://drive.google.com/drive/folders/17fwxGyQ3Qb0TLOalI-Y9wfgTPuXSYgiI)
-[![financial](https://img.shields.io/badge/Download-financial_Dataset-%234285F4?logo=GoogleDrive&labelColor=lightgrey)](https://drive.google.com/drive/folders/12ffxwxVAGM_MQiYpIk9aBLQrb2xQupT-) 
-
+Download data. You can obtain all the six benchmarks from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/e1ccfff39ad541908bae/) or [Google Drive](https://drive.google.com/drive/folders/1ZOYpTUa82_jCcxIdTmyr0LXQfvaM9vIy?usp=sharing). **All the datasets are well pre-processed** and can be used easily.(We thanks Author of Autoformer ,Haixu Wu for sorting datasets and public sharing them.)
 
 The data directory structure is shown as follows. 
 ```
@@ -180,16 +172,6 @@ The data directory structure is shown as follows.
     └── weather
         └── weather.csv
 ```
-
-
-
-
-
-
-<img src="https://render.githubusercontent.com/render/math?math=W\bmod{2^{L}}=0">
-
-&#40;The formula might not be shown in the darkmode Github&#41;
-
 ## Contact
 
 If you have any questions, feel free to contact us or post github issues. Pull requests are highly welcomed!
@@ -203,11 +185,15 @@ Maowei Jiang: jiangmaowei@sia.cn
 
 Thank you all for your attention to our work!
 
-This code uses ([Autoformer](https://github.com/thuml/Autoformer),[Informer](https://github.com/zhouhaoyi/Informer2020), [Reformer](https://github.com/lucidrains/reformer-pytorch), [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch), [LSTM](https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction),[Transformer](https://github.com/microsoft/StemGNN), [Transformer](https://github.com/microsoft/StemGNN), [Transformer](https://github.com/microsoft/StemGNN), [Transformer](https://github.com/microsoft/StemGNN), [Transformer](https://github.com/microsoft/StemGNN), [Transformer](https://github.com/microsoft/StemGNN), [Transformer](https://github.com/microsoft/StemGNN), [Transformer](https://github.com/microsoft/StemGNN)) as baseline methods for comparison and further improvement.
+This code uses ([Autoformer](https://github.com/thuml/Autoformer),[Informer](https://github.com/zhouhaoyi/Informer2020), [Reformer](https://github.com/lucidrains/reformer-pytorch), [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch), [LSTM](https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction),[N-HiTS](https://github.com/Nixtla/neuralforecast), [N-BEATS](hhttps://github.com/ServiceNow/N-BEATS), [Pyraformer](https://github.com/alipay/Pyraformer), [ARIMA](https://github.com/gmonaci/ARIMA)) as baseline methods for comparison and further improvement.
 
 We appreciate the following github repos a lot for their valuable code base or datasets:
 
 https://github.com/zhouhaoyi/Informer2020
+
+https://github.com/thuml/Autoformer
+
+https://github.com/cure-lab/LTSF-Linear
 
 https://github.com/zhouhaoyi/ETDataset
 
