@@ -7,7 +7,7 @@ https://img.shields.io/badge/arXiv-Time%20Series%20is%20a%20Special%20Sequence%3
 
 
 
-This is the original pytorch implementation for the following paper: [FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting](https://arxiv.org/pdf/2106.09305.pdf). Alse see the [Open Review verision]().  
+This is the original pytorch implementation for the following paper: [FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting](). Alse see the [Open Review verision]().  
 
 If you find this repository useful for your research work, please consider citing it as follows:
 
