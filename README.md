@@ -50,9 +50,9 @@ year={2022}
 
 ## To-do items
 
--  Integrate GNN-based spatial models into SCINet for better performance and higher efficiency on spatial-temporal time series. Our preliminary results show that this feature could result in considerable gains on the prediction accuracy of some datasets &#40;e.g., PEMSxx&#41;.
-
--  Generate probalistic forecasting results.n 
+- Integrate FECAM into other mainstream models(eg:Pyraformer,Bi-lstm,etc.) for better performance and higher efficiency on real-world time series.
+- Validate FECAM on more spatial-temporal time series datasets.
+- As a sequence modelling module,we believe it can work fine on NLP tasks too,like Machine Translation and Name Entity Recognization.Further more,as a frequency enhanced module it can theoretically work in any deep-learning models like Resnet.  
 
 Stay tuned!
 
