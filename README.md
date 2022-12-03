@@ -33,8 +33,8 @@ year={2022}
 
 ## Features
 
-- [x] Support **6** popular time-series forecasting datasets, namely Electricity Transformer Temperature (ETTh1, ETTh2 and ETTm1,ETTm2) , Traffic, National Illness, Electricity and Exchange Rate , ranging from power, energy, finance,illness and traffic domains.
-- [x] We generalize fecam into a module which can be flexibly and easily applied into any deep learning models within just few code lines.
+- [x] Support **Six** popular time-series forecasting datasets, namely Electricity Transformer Temperature (ETTh1, ETTh2 and ETTm1,ETTm2) , Traffic, National Illness, Electricity and Exchange Rate , ranging from power, energy, finance,illness and traffic domains.
+- [x] **We generalize FECAM into a module which can be flexibly and easily applied into any deep learning models within just few code lines.**
 
 [comment]: <> (![traffic]&#40;https://img.shields.io/badge/🚅-Traffic-yellow&#41;)
 
