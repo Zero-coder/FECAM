@@ -1,12 +1,11 @@
 # FECAM(In VLDB2023 Submission)
-
-[![Arxiv link]([FECAM](https://img.shields.io/badge/arxiv-FECAM%3A%20Frequency%20Enhanced%20Channel%20Attention%20Mechanism%20for%20Time%20Series%20Forecasting-red)](https://arxiv.org/abs/2212.01209)
+[![Arxiv link](https://img.shields.io/badge/arXIv-FECAM%3A%20Frequency%20Enhanced%20Channel%20Attention%20Mechanism%20for%20Time%20Series%20Forecasting-red)](https://arxiv.org/abs/2212.01209)
 
 ![state-of-the-art](https://img.shields.io/badge/-STATE--OF--THE--ART-blue?logo=Accenture&labelColor=lightgrey)![pytorch](https://img.shields.io/badge/-PyTorch-%23EE4C2C?logo=PyTorch&labelColor=lightgrey)
 
 
 
-This is the original pytorch implementation for the following paper: [FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting](https://arxiv.org/abs/2212.01209). Alse see the [Open Review verision]().  
+This is the original pytorch implementation for the following paper: [[FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>)](https://arxiv.org/abs/2212.01209). Alse see the [Open Review verision]().  
 
 If you find this repository useful for your research work, please consider citing it as follows:
 
