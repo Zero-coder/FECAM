@@ -1,8 +1,7 @@
 # FECAM(In VLDB2023 Submission)
 
 [![Arxiv link](FECAM)](https://arxiv.org/abs/2212.01209)
-<!-- 
-https://img.shields.io/badge/arXiv-Time%20Series%20is%20a%20Special%20Sequence%3A%20Forecasting%20with%20Sample%20Convolution%20and%20Interaction-%23B31B1B -->
+https://img.shields.io/badge/arxiv-FECAM%3A%20Frequency%20Enhanced%20Channel%20Attention%20Mechanism%20for%20Time%20Series%20Forecasting-red
 ![state-of-the-art](https://img.shields.io/badge/-STATE--OF--THE--ART-blue?logo=Accenture&labelColor=lightgrey)![pytorch](https://img.shields.io/badge/-PyTorch-%23EE4C2C?logo=PyTorch&labelColor=lightgrey)
 
 
