@@ -5,7 +5,7 @@
 
 
 
-This is the original pytorch implementation for the following paper: [[FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>)](https://arxiv.org/abs/2212.01209). Alse see the [Open Review verision]().  
+This is the original pytorch implementation for the following paper: [[FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>)](https://arxiv.org/abs/2212.01209). 
 
 If you find this repository useful for your research work, please consider citing it as follows:
 
