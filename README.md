@@ -1,5 +1,5 @@
 # FECAM(In VLDB2023 Submission)
-[![Arxiv link](https://img.shields.io/badge/arxiv-FECAM%3A%20Frequency%20Enhanced%20Channel%20Attention%20Mechanism%20for%20Time%20Series%20Forecasting-%09%23FF0000)](https://arxiv.org/abs/2212.01209)
+[![Arxiv link](https://img.shields.io/badge/arXiv-FECAM%3A%20Frequency%20Enhanced%20Channel%20Attention%20Mechanism%20for%20Time%20Series%20Forecasting-%09%23FF0000)](https://arxiv.org/abs/2212.01209)
 
 ![state-of-the-art](https://img.shields.io/badge/-STATE--OF--THE--ART-blue?logo=Accenture&labelColor=lightgrey)![pytorch](https://img.shields.io/badge/-PyTorch-%23EE4C2C?logo=PyTorch&labelColor=lightgrey)
 
@@ -11,16 +11,13 @@ If you find this repository useful for your research work, please consider citin
 
 ```
 
-@article{2022FECAM,
-
-title={FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting},
-
-author={Jiang, Maowei and Zeng, Pengyu and Wang, Kai and Chen, Wenbo and Liu, Huan and Liu, Haoran},
-
-journal=Arxiv, 2022},
-
-year={2022}
-
+@misc{jiang2022fecam,
+      title={FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting}, 
+      author={Maowei Jiang and Pengyu Zeng and Kai Wang and Huan Liu and Wenbo Chen and Haoran Liu},
+      year={2022},
+      eprint={2212.01209},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
 }
 
 ```
