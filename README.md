@@ -63,12 +63,12 @@ Stay tuned!
 2. Download data. You can obtain all the six benchmarks from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/e1ccfff39ad541908bae/) or [Google Drive](https://drive.google.com/drive/folders/1ZOYpTUa82_jCcxIdTmyr0LXQfvaM9vIy?usp=sharing). **All the datasets are well pre-processed** and can be used easily.
 3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can reproduce the experiment results by:
 ```
-    bash ./scripts/ETT_script/FECAM_ETTm2.sh
-    bash ./scripts/ECL_script/FECAM.sh
-    bash ./scripts/Exchange_script/FECAM.sh
-    bash ./scripts/Traffic_script/FECAM.sh
-    bash ./scripts/Weather_script/FECAM.sh
-    bash ./scripts/ILI_script/FECAM.sh
+    sh ./scripts/electricity.sh
+    sh ./scripts/ettm2.sh
+    sh ./scripts/exchange_rate.sh
+    sh ./scripts/ill.sh
+    sh ./scripts/traffic.sh
+    sh ./scripts/weather.sh
 ```
 ## SENET(channel attention)
 <p align="center">
