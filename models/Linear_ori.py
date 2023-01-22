@@ -7,7 +7,7 @@ import torch_dct as dct
 
 import numpy as np
 import math
-# class Model(nn.Module):#2022.11.7修改前，这个Model能跑通#forMultivariate
+# class Model(nn.Module):SENET for ETTmx
 
 #     """
 #     Just one Linear layer
