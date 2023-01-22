@@ -37,9 +37,9 @@ import math
 #     def forward(self, x):
 #         # x: [Batch, Input length, Channel]
 #   
-#         x = x.permute(0,2,1) # (B，L,C)=》(B,C,L)
+#         x = x.permute(0,2,1) # (B，L,C)->(B,C,L)
 #         b, c, l = x.size() # (B,C,L)
-#         y = self.avg_pool(x).view(b, c) # (B,C,L) 通过avg=》 (B,C,1)
+#         y = self.avg_pool(x).view(b, c) # (B,C,L) 
         
         
 #         # np.save('f_weight.npy', f_weight_np)
@@ -88,7 +88,7 @@ class Model(nn.Module):
         self.Linear = nn.Linear(self.seq_len, self.pred_len)
         self.Linear_1 = nn.Linear(self.seq_len, self.pred_len)
         # self.dct_norm = nn.LayerNorm([self.channel_num], eps=1e-6)
-        self.dct_norm = nn.LayerNorm(self.seq_len, eps=1e-6)#
+        self.dct_norm = nn.LayerNorm(self.seq_len, eps=1e-6)
         # self.my_layer_norm = nn.LayerNorm([96], eps=1e-6)
     def forward(self, x):
         x = x.permute(0,2,1) # (B，L,C)=》(B,C,L)#forL
@@ -135,13 +135,7 @@ class Model(nn.Module):
         # np.save('f_weight.npy', f_weight_np)
         # x = x.permute(0,2,1)
         # result = self.Linear((x *(f_weight_inverse)))#forL 
-        result = self.Linear((x *(f_weight)))#forL 
-        
-        # result = result + (1)*torch.mean(result)# for ill
-        # result_1 = self.Linear_1(x)
-        # result = result + result_1
-        # result = self.my_layer_norm(result)
-
+        result = self.Linear((x *(f_weight)))#forL
         return  result.permute(0,2,1)
         
         
