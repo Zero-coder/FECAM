@@ -51,7 +51,7 @@ def dct(x, norm=None):
     return V
 
 
-# class dct_channel_block(nn.Module):
+# class senet_block(nn.Module):
 #     def __init__(self, channel=512, ratio=1):
 #         super(dct_channel_block, self).__init__()
 #         self.avg_pool = nn.AdaptiveAvgPool1d(1) #innovation
@@ -64,13 +64,12 @@ def dct(x, norm=None):
 
 #     def forward(self, x):
 #         # b, c, l = x.size() # (B,C,L)
-#         # y = self.avg_pool(x) # (B,C,L) 通过avg=》 (B,C,1)
+#         # y = self.avg_pool(x) # (B,C,L) -> (B,C,1)
 #         # print("y",y.shape)
 #         x = x.permute(0,2,1)
 #         b, c, l = x.size() 
-#         y = self.avg_pool(x).view(b, c) # (B,C,L) 通过avg=》 (B,C,1)
+#         y = self.avg_pool(x).view(b, c) # (B,C,L) ->(B,C,1)
 #         # print("y",y.shape)
-#         #为了丢给Linear学习，需要view把数据展平开
 #         # y = self.fc(y).view(b, c, 96)
 
 #         y = self.fc(y).view(b,c,1)
@@ -88,7 +87,7 @@ class dct_channel_block(nn.Module):
                 nn.Linear( channel*2, channel, bias=False),
                 nn.Sigmoid()
         )
-        # self.dct_norm = nn.LayerNorm([512], eps=1e-6)#作为模块一般normal channel效果好点 for traffic
+        # self.dct_norm = nn.LayerNorm([512], eps=1e-6)
   
         self.dct_norm = nn.LayerNorm([96], eps=1e-6)#for lstm on length-wise
         # self.dct_norm = nn.LayerNorm([36], eps=1e-6)#for lstm on length-wise on ill with input =36
@@ -96,18 +95,17 @@ class dct_channel_block(nn.Module):
 
     def forward(self, x):
         b, c, l = x.size() # (B,C,L) (32,96,512)
-        # y = self.avg_pool(x) # (B,C,L) 通过avg=》 (B,C,1)
+        # y = self.avg_pool(x) # (B,C,L) -> (B,C,1)
         
-        # y = self.avg_pool(x).view(b, c) # (B,C,L) 通过avg=》 (B,C,1)
-        # print("y",y.shape)
-        #为了丢给Linear学习，需要view把数据展平开
+        # y = self.avg_pool(x).view(b, c) # (B,C,L) -> (B,C,1)
+        # print("y",y.shape
         # y = self.fc(y).view(b, c, 96)
         list = []
-        for i in range(c):#i represent channel ，分别对channel的数据做dct
+        for i in range(c):
             freq=dct(x[:,i,:])     
             # print("freq-shape:",freq.shape)
             list.append(freq)
-            ##把dct结果进行拼接，再进行频率特征学习
+         
         
 
         stack_dct=torch.stack(list,dim=1)
@@ -116,9 +114,9 @@ class dct_channel_block(nn.Module):
         for traffic mission:f_weight = self.dct_norm(f_weight.permute(0,2,1))#matters for traffic datasets
         '''
         
-        lr_weight = self.dct_norm(stack_dct) #不一定要,lstm用的时候不加
+        lr_weight = self.dct_norm(stack_dct) 
         lr_weight = self.fc(stack_dct)
-        lr_weight = self.dct_norm(lr_weight) #不一定要,lstm用的时候不加
+        lr_weight = self.dct_norm(lr_weight) 
         
         # print("lr_weight",lr_weight.shape)
         return x *lr_weight #result
@@ -131,6 +129,4 @@ if __name__ == '__main__':
     result = dct_model.forward(tensor) 
     print("result.shape:",result.shape)
 
-#Informer channel*2
-#
 
