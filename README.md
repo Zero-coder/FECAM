@@ -39,7 +39,6 @@ If you find this repository useful for your research work, please consider citin
 
 [comment]: <> (![finance]&#40;https://img.shields.io/badge/💵-Finance-yellow&#41;)
 
-- [x] Provide all training logs.
 
 
 
