@@ -24,7 +24,7 @@ If you find this repository useful for your research work, please consider citin
 
 ## Updates
 - [2022-12-01] FECAM v1.0 is released
-
+- [2023-3-23] Model/Linear means FECAM+ linear projection layer,fecam is used for feature extration,and projection layer is for controlling the output length of the prediction
 
 ## Features
 
