@@ -7,10 +7,39 @@
 
 This is the original pytorch implementation for the following paper: [[FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>)](https://arxiv.org/abs/2212.01209). 
 
+Formal publication address:
+https://www.sciencedirect.com/science/article/pii/S1474034623002860?dgcid=coauthor
+
 If you find this repository useful for your research work, please consider citing it as follows:
 
 ```
 
+@article{JIANG2023102158,
+title = {FECAM: Frequency enhanced channel attention mechanism for time series forecasting},
+journal = {Advanced Engineering Informatics},
+volume = {58},
+pages = {102158},
+year = {2023},
+issn = {1474-0346},
+doi = {https://doi.org/10.1016/j.aei.2023.102158},
+url = {https://www.sciencedirect.com/science/article/pii/S1474034623002860},
+author = {Maowei Jiang and Pengyu Zeng and Kai Wang and Huan Liu and Wenbo Chen and Haoran Liu},
+keywords = {Time series forecasting, Channel attention, Frequency domain, Gibbs phenomenon, Real world datasets},
+abstract = {Time series forecasting (TSF) is a challenging problem in various real-world scenarios, such as industry, energy, weather, traffic, economics, and earthquake warning. TSF demands the model to have a high prediction accuracy. Despite the promising performance of deep learning-based methods in TSF tasks, mainstream forecasting models may sometimes produce results that deviate from the actual ground truth. Our analysis suggests that this may be attributed to the models’ limited ability to capture the frequency information that is abundantly present in real-world datasets. Currently, the Fourier Transform (FT) is the most widely used method for extracting frequency information, but it has some issues that lead to poor model performance, such as high-frequency noise caused by the Gibbs phenomenon and computational overhead of the inverse transformation in the FT-IFT process. To address these issues, we propose a novel frequency enhanced channel attention mechanism (FECAM) that models frequency interdependencies between channels based on Discrete Cosine Transform (DCT), which inherently mitigates the high-frequency noise caused by problematic periodicity during Fourier Transform. This approach improves the model’s capability to extract frequency features and resolves computational overhead concerns that arise from inverse transformations. Our contributions are threefold: (1) We propose a novel frequency enhanced channel attention mechanism that models frequency interdependencies between channels based on DCT, which improves the model’s capability to extract frequency features and resolves computational overhead concerns that arise from inverse transformations; (2) We theoretically prove that our method mitigates the Gibbs phenomenon, which introduces high frequency noise during Fourier Transform. We demonstrate that the result of 1D GAP linearly varies with the lowest frequency component of 1D DCT; (3) We demonstrate the generalization ability of the proposed method FECAM by embedding it into other networks, resulting in significant performance improvements when compared to the original model, with only a minor increase in parameters. Furthermore, we conduct extensive experiments on six different real-world TSF datasets to validate the effectiveness of our proposed model and compare it with several existing state-of-the-art models. Our findings indicate that the FECAM model is superior to these models in terms of accuracy, making it a promising solution for TSF in diverse real-world scenarios. Our codes and data are available at https://github.com/Zero-coder/FECAM.}
+}
+
+@misc{jiang2022fecam,
+      title={FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting}, 
+      author={Maowei Jiang and Pengyu Zeng and Kai Wang and Huan Liu and Wenbo Chen and Haoran Liu},
+      year={2022},
+      eprint={2212.01209},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+```
+Or
+```
 @misc{jiang2022fecam,
       title={FECAM: Frequency Enhanced Channel Attention Mechanism for Time Series Forecasting}, 
       author={Maowei Jiang and Pengyu Zeng and Kai Wang and Huan Liu and Wenbo Chen and Haoran Liu},
